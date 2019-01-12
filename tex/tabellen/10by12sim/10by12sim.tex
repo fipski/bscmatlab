@@ -1,0 +1,30 @@
+
+\newcommand{\tabIncludeGraphics}[3]{
+\begin{minipage}[c][3cm]{1cm}
+  \(#1\)
+\end{minipage}
+&
+\begin{minipage}[c][3cm]{3cm}
+  \includegraphics[valign=m,height=1cm]{rec-#2.png}
+\end{minipage}
+&
+\begin{minipage}[c][3cm]{3cm}
+  \includegraphics[valign=m,height=1cm]{hex-#3.png}
+\end{minipage}
+\\
+}
+\begin{tabular}{ccc}
+  \toprule
+  \(d / h\) & Rechteckige Anordnung & Sechseckige Anordnung \\
+  \midrule
+
+  \tabIncludeGraphics{0,7}{1}{1}
+  \tabIncludeGraphics{0,8}{2}{2}
+  \tabIncludeGraphics{0,9}{3}{3}
+  \tabIncludeGraphics{1,0}{4}{4}
+  \tabIncludeGraphics{1,1}{5}{5}
+  \tabIncludeGraphics{1,2}{6}{6}
+  \tabIncludeGraphics{1,2}{7}{7}
+  \tabIncludeGraphics{1,2}{8}{8}
+  \bottomrule
+\end{tabular}

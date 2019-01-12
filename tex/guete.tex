@@ -1,0 +1,79 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\definecolor{mycolor1}{rgb}{0.00000,0.44700,0.74100}%
+\definecolor{mycolor2}{rgb}{0.85000,0.32500,0.09800}%
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=4.521in,
+height=3.566in,
+at={(0.758in,0.481in)},
+scale only axis,
+xmin=0.7,
+xmax=1.7,
+xlabel style={font=\color{white!15!black}},
+xlabel={d/h},
+ymin=0.03,
+ymax=0.12,
+ylabel style={font=\color{white!15!black}},
+ylabel={Güte},
+axis background/.style={fill=white},
+xmajorgrids,
+ymajorgrids,
+legend style={legend cell align=left, align=left, draw=white!15!black}
+]
+\addplot [color=mycolor1]
+  table[row sep=crcr]{%
+0.7	0.0687478716527311\\
+0.75	0.0639097068315768\\
+0.8	0.0594387784526994\\
+0.85	0.0553188975463669\\
+0.9	0.0515294427033673\\
+0.95	0.0480498944077511\\
+1	0.0448641759921802\\
+1.05	0.0419654393484881\\
+1.1	0.0393616697569448\\
+1.15	0.0370820793323757\\
+1.2	0.0351834926393807\\
+1.25	0.0337545598737787\\
+1.3	0.0329138156734649\\
+1.35	0.0327968402530014\\
+1.4	0.0335312750820138\\
+1.45	0.0352074520361065\\
+1.5	0.0378597273663127\\
+1.55	0.0414683743839064\\
+1.6	0.0459772948502475\\
+};
+\addlegendentry{Sechseckige Anordnung}
+
+\addplot [color=mycolor2]
+  table[row sep=crcr]{%
+0.7	0.0500574977358897\\
+0.75	0.0456183319640804\\
+0.8	0.0416552795966884\\
+0.85	0.0381638021030256\\
+0.9	0.0351921343433149\\
+0.95	0.0328632495691049\\
+1	0.0313866694170912\\
+1.05	0.0310368940430728\\
+1.1	0.032078637376992\\
+1.15	0.0346667232299783\\
+1.2	0.0387992794048219\\
+1.25	0.0443583308526639\\
+1.3	0.0511838013275475\\
+1.35	0.0591236992625139\\
+1.4	0.0680517678464868\\
+1.45	0.0778672891307091\\
+1.5	0.0884893613730591\\
+1.55	0.0998510888071986\\
+1.6	0.111895173380306\\
+};
+\addlegendentry{Rechteckige Anordnung}
+
+\end{axis}
+\end{tikzpicture}%
